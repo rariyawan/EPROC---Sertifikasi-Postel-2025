@@ -2,7 +2,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
 <head runat="server">
     <title></title>
 <link rel="stylesheet" type="text/css" href="../Styles/pips/Style_doctype.css"/>
@@ -41,25 +41,25 @@
 </script>
     
 </head>
-<body style="MARGIN: 0px" marginheight="0" marginwidth="0">
+<body style="MARGIN: 0px">
 <form id="form1" runat="server" enctype="multipart/form-data">
-<table align="left" width="100%">
+<table class="add_full-width-table"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
   <tr>
     <td>
-        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <table class="add_table-top"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
         <tr>
-          <td><img border="0" src="../images_tab/tab_s_on.gif"></td> 
-          <td background="../images_tab/tab_on.gif" nowrap align="center"><b>Postel Certificate Process</b></td> 
-          <td><img border="0" src="../images_tab/tab_e_on.gif"></td> 
-          <td background="../images_tab/tab_back.gif" width="100%">&nbsp;</td> 
-          <td><img border="0" src="../images_tab/tab_end.gif"></td>
+          <td><img border="0" src="../images_tab/tab_s_on.gif" alt=""></td> 
+          <td class="add_tab-active"><b>Postel Certificate Process</b></td> 
+          <td><img border="0" src="../images_tab/tab_e_on.gif" alt=""></td> 
+          <td class="add_tab-end">&nbsp;</td> 
+          <td><img border="0" src="../images_tab/tab_end.gif" alt=""></td>
         </tr>
       </table>
-         <table border="0" cellspacing="0" cellpadding="0">
+         <table class="add_table-top"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
           <tr>
-            <td valign="top">
+            <td>
               <asp:Panel id="pnlFilter" runat="server">
-              <table class="Record" cellspacing="0" cellpadding="0">
+              <table class="Record add_table-real"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
                 <tr class="Controls">
                   <td class="th">Cari &nbsp;&nbsp; </td> 
                   <td><asp:TextBox ID="txtSearch" runat="server" Columns="32" 
@@ -72,15 +72,15 @@
                           <asp:ListItem Value="1">PROCUREMENT PROCESS</asp:ListItem>
                           <asp:ListItem Value="3">VENDOR PROCESS</asp:ListItem>
                           <asp:ListItem Value="6">PROCUREMENT VERIFICATION</asp:ListItem>
-                      </asp:DropDownList>
-                    &nbsp;</td> 
-                </tr>
+                      </asp:DropDownList>&nbsp;&nbsp;<asp:Button ID="btnFilter" runat="server" CssClass="Button" Text="Find" onclick="btnFilter_Click" />&nbsp;&nbsp;
+                  </td> 
+                </tr><!--
                 <tr class="Controls">
                   <td colspan="4" style="text-align: right">&nbsp; 
-                    <asp:Button ID="btnFilter" runat="server" CssClass="Button" Text="Find" 
+                    <asp:Button ID="btnFilterx" runat="server" CssClass="Button" Text="Find" 
                           onclick="btnFilter_Click" />
                       &nbsp;&nbsp;</td>
-                </tr>
+                </tr>-->
               </table>
               </asp:Panel>
             </td>
@@ -89,7 +89,7 @@
         <br /><br />
       <asp:Panel id="pnlGrid" runat="server">
           
-          <table class="Header" border="0" cellspacing="0" cellpadding="0" width="100%">
+          <table class="Header add_table-top"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
             <tr>
             <td class="HeaderLeft"><img border="0" alt="" src="../Styles/pips/Images/Spacer.gif"></td> 
             <td class="th">
@@ -139,7 +139,7 @@
       <br />
       </asp:Panel>
         <asp:Panel ID="pnlPaging" runat="server">
-        <table border="0" cellpadding="0" cellspacing="0" width="99%" align="center">
+        <table class="add_table-top"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
         <tr>
         <td>
             <asp:ImageButton ID="imbFirst" runat="server" onclick="imbFirst_Click"/>
@@ -155,20 +155,19 @@
         </asp:Panel>
 
 
- <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+ <table class="add_full-width-table"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
 <tr>
   <td>
     <asp:Panel ID="pnlForm" runat="server">
 
-      <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+      <table class="add_full-width-table"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
       <tr>
           <td>
-              <table class="Header" border="0" cellspacing="0" cellpadding="0" width="100%">
+              <table class="Header add_table-top"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
                   <tr>
                   <td class="HeaderLeft"><img border="0" alt="" src="../Styles/pips/Images/Spacer.gif"></td> 
                   <td class="th">
-                      <center>
-                          Postel Certificate Process</center>
+                          Postel Certificate Process
                   </td> 
                   <td class="HeaderRight"><img border="0" alt="" src="../Styles/pips/Images/Spacer.gif"></td>
                   </tr>
@@ -176,36 +175,37 @@
           </td>
       </tr>
       <tr>
-          <td valign="top">
-            
-            <table cellspacing="0" cellpadding="5" width="100%">
+          
+          <td>
+
+            <table class="add_table-form"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
                 <tr class="Controls">
                     <td class="th" style="width:30%"><strong>Request Number</strong></td>
-                    <td nowrap="nowrap">
+                    <td class="add_no-wrap">
                         <asp:Label ID="lblRequestNumber" runat="server"></asp:Label>
                     </td>
                 </tr>
                 <tr class="Controls">
                     <td class="th"><strong>Request Date</strong></td>
-                    <td nowrap="nowrap">
+                    <td class="add_no-wrap">
                         <asp:Label ID="lblRequestDate" runat="server"></asp:Label>
                     </td>
                 </tr>
                 <tr class="Controls">
                     <td class="th"><strong>Dispatch Date</strong></td> 
-                    <td nowrap="nowrap">
+                    <td class="add_no-wrap">
                         <asp:Label ID="lblDispatchDate" runat="server"></asp:Label>
                     </td> 
                 </tr>
                 <tr class="Controls">
                     <td class="th"><strong>Description</strong></td> 
-                    <td nowrap="nowrap">
+                    <td class="add_no-wrap">
                         <asp:Label ID="lblDescription" runat="server"></asp:Label>
                     </td> 
                 </tr>
                 <tr class="Controls">
                     <td class="th"><strong>PO Number / Vendor</strong></td> 
-                    <td nowrap="nowrap">
+                    <td class="add_no-wrap">
                         <asp:Label ID="lblPONumber" runat="server"></asp:Label>
                         &nbsp;/
                         <asp:Label ID="lblVendorName" runat="server"></asp:Label>
@@ -213,7 +213,7 @@
                 </tr>
                 <tr class="Controls">
                     <td class="th"><strong>Spec. Code / Item Name</strong></td>
-                    <td nowrap="nowrap">
+                    <td class="add_no-wrap">
                         <asp:Label ID="lblSpecCode" runat="server"></asp:Label>
                         &nbsp;/
                         <asp:Label ID="lblItemName" runat="server"></asp:Label>
@@ -221,16 +221,16 @@
                 </tr>
                 <tr class="Controls">
                     <td class="th"><strong>Status</strong></td>
-                    <td nowrap="nowrap">
+                    <td class="add_no-wrap">
                         <asp:Label ID="lblRequestStatus" runat="server"></asp:Label>
                     </td>
                 </tr>
             </table>
               <br />
               <asp:Label ID="lblMessage" ForeColor="Red" runat="server" Font-Size="Medium"></asp:Label>
-            <table cellspacing="0" cellpadding="5" width="100%">
+            <table class="add_table-form"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
                 <tr class="Controls">
-                   <td colspan="2" width="50%" style="background-color:lightblue; text-align:center"><strong>CERTIFICATE DATA CURRENT</strong></td>
+                   <td colspan="2" style="background-color:lightblue; text-align:center; width: 50%"><strong>CERTIFICATE DATA CURRENT</strong></td>
                     <td colspan="2" style="background-color:lightblue; text-align:center"><strong>CERTIFICATE DATA NEW</strong></td>
                 </tr>
                 <tr class="Controls">
@@ -239,7 +239,7 @@
                         <asp:Label ID="lblPrev_CertNo" runat="server"></asp:Label>
                     </td>
                     <td class="th" style="width:15%"><strong>Certificate Number</strong></td>
-                    <td nowrap="nowrap">
+                    <td class="add_no-wrap">
 
                         <asp:TextBox ID="txtCertNo" runat="server" Columns="32" CssClass="ControlsIN"></asp:TextBox>
 
@@ -255,7 +255,7 @@
                       <asp:Label ID="lblPrev_CertSDPPI" runat="server"></asp:Label>
                   </td>
                   <td class="th"><strong>SDPPI Online Certificate URL</strong></td>
-                  <td nowrap="nowrap">
+                  <td class="add_no-wrap">
                       <asp:TextBox ID="txtCertSDPPI" runat="server" Columns="64" CssClass="ControlsIN"></asp:TextBox>
                   </td>
               </tr>
@@ -267,12 +267,12 @@
                       <asp:Label ID="lblPrev_CertEnd" runat="server"></asp:Label>
                   </td>
                   <td class="th"><strong>Period</strong></td>
-                  <td nowrap="nowrap">
+                  <td class="add_no-wrap">
                       <asp:TextBox ID="txtCertFrom" runat="server" Columns="15" CssClass="ControlsIN"></asp:TextBox>
-                      <img onclick="scwShow(document.getElementById('txtCertFrom'),event);" border="0" src="../images/calendar.gif" runat="server" ID="imgFrom">
+                      <img onclick="scwShow(document.getElementById('txtCertFrom'),event);" border="0" src="../images/calendar.gif" runat="server" ID="imgFrom" alt="">
                       &nbsp;to
                       <asp:TextBox ID="txtCertTo" runat="server" Columns="15" CssClass="ControlsIN"></asp:TextBox>
-                      <img onclick="scwShow(document.getElementById('txtCertTo'),event);" border="0" src="../images/calendar.gif" runat="server" ID="imgTo">
+                      <img onclick="scwShow(document.getElementById('txtCertTo'),event);" border="0" src="../images/calendar.gif" runat="server" ID="imgTo" alt="">
                   </td>
               </tr>
               <tr class="Controls">
@@ -281,7 +281,7 @@
                       <asp:Label ID="lblPrev_DocURL" runat="server"></asp:Label>
                   </td>
                   <td class="th"><strong>Upload File Certificate</strong></td>
-                  <td nowrap="nowrap">
+                  <td class="add_no-wrap">
                       <asp:FileUpload ID="txtCertFileUpload" runat="server" CssClass="ControlsIN" Width="260px"/>
                       &nbsp;&nbsp;
                       <asp:Label ID="lblDownloadCert" runat="server"></asp:Label>
@@ -293,7 +293,7 @@
                       <asp:Label ID="lblPrev_AddNotes" runat="server"></asp:Label>
                   </td>
                   <td class="th"><strong>Additional Notes</strong></td>
-                  <td nowrap="nowrap">
+                  <td class="add_no-wrap">
                       <asp:TextBox ID="txtCertNotes" runat="server" Columns="50" CssClass="ControlsIN" MaxLength="18" Rows="5" TextMode="MultiLine"></asp:TextBox>
                   </td>
               </tr>
@@ -302,8 +302,8 @@
                   <td>
                       <asp:Label ID="lblPrev_JustificationURL" runat="server"></asp:Label>
                   </td>
-                  <td class="th" nowrap="nowrap"><strong>Upload Justification File</strong><br /> <em>* if only previous certificate is valid forever</em></td>
-                  <td nowrap="nowrap">
+                  <td class="th add_no-wrap"><strong>Upload Justification File</strong><br /> <em>* if only previous certificate is valid forever</em></td>
+                  <td class="add_no-wrap">
                       <asp:FileUpload ID="txtCertJustificationUpload" runat="server" CssClass="ControlsIN" Width="260px" />
                       &nbsp;&nbsp;
                       <asp:Label ID="lblDownloadJust" runat="server"></asp:Label>
@@ -312,8 +312,8 @@
                 <tr class="Controls">
                     <td class="th">&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td class="th" nowrap="nowrap"><strong>Update By</strong></td>
-                    <td nowrap="nowrap">
+                    <td class="th add_no-wrap"><strong>Update By</strong></td>
+                    <td class="add_no-wrap">
                         <asp:Label ID="lblUpdateBy" runat="server"></asp:Label>
                     </td>
                 </tr>
@@ -321,11 +321,11 @@
                 <tr class="Controls">
                     <td class="th">&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td class="th" colspan="2" nowrap="nowrap" style="text-align:right">
+                    <td class="th add_no-wrap" colspan="2" style="text-align:right">
                         <asp:Button ID="btnSave" runat="server" CssClass="Button" OnClick="btnSave_Click" OnClientClick="return clickSave()" Text="Save" />
                         &nbsp;
                         <asp:Button ID="btnSendIntan" runat="server" BackColor="Yellow" CssClass="Button" ForeColor="Black" OnClick="btnSendIntan_Click" OnClientClick="return clickIntan()" Text="Submit to INTAN" />
-                        <a id="textLoading" name="textLoading" style="display:none">Please wait while loading ...</a>&nbsp;
+                        <a id="textLoading" style="display:none">Please wait while loading ...</a>&nbsp;
                         &nbsp;
                         <asp:Button ID="btnBack" runat="server" CssClass="Button" OnClick="btnBack_Click" Text="Back" />
                         <br />
@@ -336,20 +336,20 @@
                 <tr class="Controls">
                     <td class="th">&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td class="th" colspan="2"  style="background-color:lightblue; text-align:center" nowrap="nowrap"><b>REQUEST TO VENDOR</b></td>
+                    <td class="th add_no-wrap" colspan="2"  style="background-color:lightblue; text-align:center"><b>REQUEST TO VENDOR</b></td>
                 </tr>
                 <tr class="Controls">
                     <td class="th">&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td class="th" nowrap="nowrap"><strong>Notes to Vendor</strong></td>
-                    <td nowrap="nowrap">
+                    <td class="th add_no-wrap"><strong>Notes to Vendor</strong></td>
+                    <td class="add_no-wrap">
                         <asp:TextBox ID="txtNotesVendor" runat="server" Columns="50" CssClass="ControlsIN" MaxLength="18" Rows="5" TextMode="MultiLine"></asp:TextBox>
                     </td>
                 </tr>
                 <tr class="Controls">
                     <td class="th">&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td class="th" colspan="2" nowrap="nowrap" style="text-align:center">
+                    <td class="th add_no-wrap" colspan="2" style="text-align:center">
                         <asp:Button ID="btnRequestVendor" runat="server" BackColor="Green" CssClass="Button" OnClick="btnRequestVendor_Click" OnClientClick="return clickVendor()" Text="Request to Vendor" />
                     </td>
                 </tr>
@@ -358,22 +358,21 @@
                 <tr class="Controls">
                     <td class="th">&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td class="th" colspan="2" style="text-align:center" nowrap="nowrap"><b>REQUEST TO VENDOR HISTORY</b></td>
+                    <td class="th add_no-wrap" colspan="2" style="text-align:center"><b>REQUEST TO VENDOR HISTORY</b></td>
                 </tr>
                 <tr class="Controls">
                     <td class="th">&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td class="th" colspan="2"nowrap="nowrap">
+                    <td class="th add_no-wrap" colspan="2">
                         <asp:Label ID="lblVendorHist" runat="server"></asp:Label>
                     </td>
                 </tr>
               <tr class="Bottom">
-                  <td align="center" colspan="4">
+                  <td colspan="4">
                       &nbsp; &nbsp; &nbsp;&nbsp;
                       <asp:TextBox ID="txtRequestId" runat="server" CssClass="ControlsIN" Visible="False"></asp:TextBox>
                   </td>
               </tr>
-                </tr>
           </table>
           </td>
      </tr>
