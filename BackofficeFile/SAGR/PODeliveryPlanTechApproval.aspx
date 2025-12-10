@@ -2,7 +2,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
 <head runat="server">
     <title></title>
 <link rel="stylesheet" type="text/css" href="../Styles/pips/Style_doctype.css"/>
@@ -26,25 +26,25 @@
 </script>
     
 </head>
-<body style="MARGIN: 0px" marginheight="0" marginwidth="0">
+<body style="MARGIN: 0px">
 <form id="form1" runat="server" enctype="multipart/form-data">
-<table align="left" width="100%">
+<table class="add_full-width-table"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
   <tr>
     <td>
-        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <table class="add_table-top"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
         <tr>
-          <td><img border="0" src="../images_tab/tab_s_on.gif"></td> 
-          <td background="../images_tab/tab_on.gif" nowrap align="center"><b>Approval Delivery Plan - Postel</b></td> 
-          <td><img border="0" src="../images_tab/tab_e_on.gif"></td> 
-          <td background="../images_tab/tab_back.gif" width="100%">&nbsp;</td> 
-          <td><img border="0" src="../images_tab/tab_end.gif"></td>
+          <td><img border="0" src="../images_tab/tab_s_on.gif" alt=""></td> 
+        <td class="add_tab-active"><b>Approval Delivery Plan - Postel</b></td> 
+        <td><img border="0" src="../images_tab/tab_e_on.gif" alt=""></td> 
+        <td class="add_tab-end">&nbsp;</td> 
+        <td><img border="0" src="../images_tab/tab_end.gif" alt=""></td>
         </tr>
       </table>
-         <table border="0" cellspacing="0" cellpadding="0">
+         <table class="add_table-top"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
           <tr>
-            <td valign="top">
+            <td>
               <asp:Panel id="pnlFilter" runat="server">
-              <table class="Record" cellspacing="0" cellpadding="0">
+              <table class="Record add_table-real"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
                 <tr class="Controls">
                   <td class="th">Cari &nbsp;&nbsp; </td> 
                   <td><asp:TextBox ID="txtSearch" runat="server" Columns="32" 
@@ -65,7 +65,7 @@
         <br /><br />
       <asp:Panel id="pnlGrid" runat="server">
           
-          <table class="Header" border="0" cellspacing="0" cellpadding="0" width="100%">
+          <table class="Header add_table-top"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
             <tr>
             <td class="HeaderLeft"><img border="0" alt="" src="../Styles/pips/Images/Spacer.gif"></td> 
             <td class="th">
@@ -123,7 +123,7 @@
       <br />
       </asp:Panel>
         <asp:Panel ID="pnlPaging" runat="server">
-        <table border="0" cellpadding="0" cellspacing="0" width="99%" align="center">
+        <table class="add_table-top"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
         <tr>
         <td>
             <asp:ImageButton ID="imbFirst" runat="server" onclick="imbFirst_Click"/>
@@ -139,20 +139,19 @@
         </asp:Panel>
 
 
- <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+ <table class="add_full-width-table"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
 <tr>
   <td>
     <asp:Panel ID="pnlForm" runat="server">
 
-      <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+      <table class="add_full-width-table"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
       <tr>
           <td>
-              <table class="Header" border="0" cellspacing="0" cellpadding="0" width="100%">
+              <table class="Header add_table-top"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
                   <tr>
                   <td class="HeaderLeft"><img border="0" alt="" src="../Styles/pips/Images/Spacer.gif"></td> 
                   <td class="th">
-                      <center>
-                          Approval Delivery Plan - Postel</center>
+                          Approval Delivery Plan - Postel
                   </td> 
                   <td class="HeaderRight"><img border="0" alt="" src="../Styles/pips/Images/Spacer.gif"></td>
                   </tr>
@@ -160,55 +159,56 @@
           </td>
       </tr>
       <tr>
-          <td valign="top">
+          
+          <td>
             <asp:Label ID="lblMessage" ForeColor="Red" runat="server" Font-Size="Medium"></asp:Label>
-            <table cellspacing="0" cellpadding="5" width="100%">
+            <table class="add_table-form"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
                 <tr class="Controls">
                     <td class="th" style="width:30%"><strong>DO Number</strong></td>
-                    <td nowrap="nowrap">
+                    <td class="add_no-wrap">
                         <asp:Label ID="lblDONumber" runat="server"></asp:Label> / <asp:Label ID="lblDeliveryDate" runat="server"></asp:Label>
                     </td>
                 </tr>
                 <tr class="Controls">
                     <td class="th"><strong>PO Number</strong></td>
-                    <td nowrap="nowrap">
+                    <td class="add_no-wrap">
                         <asp:Label ID="lblPONumber" runat="server"></asp:Label> / <asp:Label ID="lblPODate" runat="server"></asp:Label>
                     </td>
                 </tr>
                 <tr class="Controls">
                      <td class="th"><strong>Vendor</strong></td> 
-                     <td nowrap="nowrap">
+                     <td class="add_no-wrap">
                          <asp:Label ID="lblVendorName" runat="server"></asp:Label>
                      </td> 
                  </tr>
                 <tr class="Controls">
                     <td class="th"><strong>PO Description</strong></td> 
-                    <td nowrap="nowrap">
+                    <td class="add_no-wrap">
                         <asp:Label ID="lblPODescription" runat="server"></asp:Label>
                     </td> 
                 </tr>
                
                 <tr class="Controls">
                     <td class="th"><strong>Target Delivery</strong></td>
-                    <td nowrap="nowrap">
+                    <td class="add_no-wrap">
                         <asp:Label ID="lblTargetDelivery" runat="server"></asp:Label>
                     </td>
                 </tr>
                 <tr class="Controls">
                     <td class="th"><strong>Requester</strong></td>
-                    <td nowrap="nowrap">
+                    <td class="add_no-wrap">
                         <asp:Label ID="lblRequester" runat="server"></asp:Label>
                     </td>
                 </tr>
                  <tr class="Controls">
                      <td class="th"><strong>Memo Request</strong></td> 
-                     <td nowrap="nowrap">
+                     <td class="add_no-wrap">
                          <asp:Label ID="lblMemo" runat="server"></asp:Label>
                      </td> 
                  </tr>
                 <tr class="Controls">
                     <td class="th">&nbsp;</td>
-                    <td nowrap="nowrap">
+                    <td class="add_no-wrap">
                         <br />
                          <asp:GridView ID="dgvItem" runat="server" AutoGenerateColumns="false" 
                          CellPadding="5" CellSpacing="0" AllowPaging="false" PagerSettings-Visible="false" AllowCustomPaging="false"
@@ -227,18 +227,18 @@
             </table>
               <br />
               
-            <table cellspacing="0" cellpadding="5" width="100%">
+            <table class="add_table-form"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
                 <tr class="Controls">
                    <td colspan="2" style="background-color:lightblue; text-align:center"><strong>SUBMIT</strong></td>
                 </tr>
                 <tr class="Controls">
-                    <td class="th" width="30%" nowrap="nowrap"><strong>Memo Approval</strong></td>
-                    <td nowrap="nowrap">
+                    <td class="th add_no-wrap" style="width: 30%"><strong>Memo Approval</strong></td>
+                    <td class="add_no-wrap">
                         <asp:TextBox ID="txtMemo" runat="server" Columns="50" CssClass="ControlsIN" MaxLength="18" Rows="5" TextMode="MultiLine"></asp:TextBox>
                     </td>
                 </tr>
                 <tr class="Controls">
-                    <td class="th" colspan="2" nowrap="nowrap" style="text-align:center">
+                    <td class="th add_no-wrap" colspan="2" style="text-align:center">
                         <asp:Button ID="btnApprove" runat="server" BackColor="Green" CssClass="Button" OnClick="btnApprove_Click" OnClientClick="return clickAppr('APPROVE')" Text="Approve" />
                         &nbsp;&nbsp;&nbsp;
                         <asp:Button ID="btnReject" runat="server" BackColor="Red" CssClass="Button" OnClick="btnReject_Click" OnClientClick="return clickAppr('REJECT')" Text="Reject" />
@@ -247,7 +247,7 @@
                     </td>
                 </tr>
               <tr class="Bottom">
-                  <td align="center" colspan="3">
+                  <td style="text-align: center" colspan="3">
                       &nbsp; &nbsp; &nbsp;&nbsp;
                       <asp:TextBox ID="txtPODelivPlanTechApprId" runat="server" CssClass="ControlsIN" Visible="False"></asp:TextBox>
                   </td>
