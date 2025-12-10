@@ -2,7 +2,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
 <head runat="server">
     <title></title>
 <link rel="stylesheet" type="text/css" href="../Styles/pips/Style_doctype.css"/>
@@ -11,25 +11,25 @@
 <script language="javascript" type="text/javascript" src="../js/modal-window.js"></script>
 <script language="javascript" type="text/javascript" src="../js/utils.js"></script>
 </head>
-<body style="MARGIN: 0px" marginheight="0" marginwidth="0">
+<body style="MARGIN: 0px">
 <form id="form1" runat="server">
-<table align="left" width="100%">
+<table class="add_full-width-table"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
   <tr>
     <td>
-        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <table class="add_table-top"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
         <tr>
-          <td><img border="0" src="../images_tab/tab_s_on.gif"></td> 
-          <td background="../images_tab/tab_on.gif" nowrap align="center"><b>Postel Certificate Vendor Confirmation</b></td> 
-          <td><img border="0" src="../images_tab/tab_e_on.gif"></td> 
-          <td background="../images_tab/tab_back.gif" width="100%">&nbsp;</td> 
-          <td><img border="0" src="../images_tab/tab_end.gif"></td>
+          <td><img border="0" src="../images_tab/tab_s_on.gif" alt=""></td> 
+          <td class="add_tab-active"><b>Postel Certificate Vendor Confirmation</b></td> 
+          <td><img border="0" src="../images_tab/tab_e_on.gif" alt=""></td> 
+          <td class="add_tab-end">&nbsp;</td> 
+          <td><img border="0" src="../images_tab/tab_end.gif" alt=""></td>
         </tr>
       </table>
-         <table border="0" cellspacing="0" cellpadding="0" style="display:none">
+         <table class="add_table-top"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
           <tr>
-            <td valign="top">
+            <td>
               <asp:Panel id="pnlFilter" runat="server">
-              <table class="Record" cellspacing="0" cellpadding="0">
+              <table class="Record add_table-real"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
                 <tr class="Controls">
                   <td class="th">Search&nbsp;&nbsp; </td> 
                   <td><asp:TextBox ID="txtSearch" runat="server" Columns="32" 
@@ -47,7 +47,7 @@
         </table>
         <br /><br />
       <asp:Panel id="pnlGrid" runat="server">
-          <table class="Header" border="0" cellspacing="0" cellpadding="0" width="100%">
+          <table class="Header add_table-top"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
             <tr>
             <td class="HeaderLeft"><img border="0" alt="" src="../Styles/pips/Images/Spacer.gif"></td> 
             <td class="th">
@@ -74,7 +74,7 @@
       <br />
       </asp:Panel>
         <asp:Panel ID="pnlPaging" runat="server">
-        <table border="0" cellpadding="0" cellspacing="0" width="99%" align="center">
+        <table class="add_table-top"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
         <tr>
         <td>
                 &nbsp;

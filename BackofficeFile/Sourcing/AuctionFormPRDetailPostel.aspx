@@ -8,7 +8,7 @@
 <%@ Import namespace="pips.Data" %>
 
 <%@Register TagPrefix="CC" Namespace="pips.Controls" %>
-<html>
+<html lang="en-us">
 <head>
 <meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676"><meta http-equiv="content-type" content="text/html; charset=windows-1252">
 
@@ -42,27 +42,27 @@
         }
     }
 </script>
-<body style="MARGIN: 0px" marginwidth="0" marginheight="0">
+<body style="MARGIN: 0px">
 <form runat="server">
-    <table width="100%">
+    <table class="add_full-width-table"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
           <tr>
             <td>&nbsp;&nbsp;&nbsp;<br>
-              <table cellspacing="0" cellpadding="0" width="100%" border="0" align="center">
+              <table class="add_table-top"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
                 <tr>
-                  <td><img border="0" src="../images/tab_s_on.gif"></td> 
-                  <td background="../images/tab_on.gif" nowrap align="center"><b>SR Item Information</b></td> 
-                  <td><img border="0" src="../images/tab_e_on.gif"></td> 
-                  <td background="../images/tab_back.gif" width="100%"></td> 
-                  <td><img border="0" src="../images/tab_end.gif"></td>
+                    <td><img border="0" src="../images_tab/tab_s_on.gif" alt=""></td> 
+                    <td class="add_tab-active"><b>SR Item Information</b></td> 
+                    <td><img border="0" src="../images_tab/tab_e_on.gif" alt=""></td> 
+                    <td class="add_tab-end">&nbsp;</td> 
+                    <td><img border="0" src="../images_tab/tab_end.gif" alt=""></td>
                 </tr>
               </table>
               </td> 
           </tr>
         </table>
-        <table cellspacing="0" cellpadding="0" width="100%" border="0" align="center">
+        <table class="add_table-top"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
           <tr>
-            <td valign="top">
-              <table class="Header" style="DISPLAY: none" cellspacing="0" cellpadding="0" border="0">
+            <td>
+              <table class="Header add_table-top" style="DISPLAY: none"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
                 <tr>
                   <td class="HeaderLeft"><img border="0" alt="" src="../Styles/pips/Images/Spacer.gif"></td> 
                   <td class="th"><strong>Auction Master</strong></td> 
@@ -70,7 +70,7 @@
                 </tr>
               </table>
  
-              <table class="Record" cellspacing="0" cellpadding="0">
+              <table class="Record add_table-top"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
                 <asp:PlaceHolder id="pips_vw_AuctionError" visible="False" runat="server">
                     <tr class="Error">
                         <td colspan="4"><asp:Label ID="pips_vw_AuctionErrorLabel" runat="server"/></td>
@@ -119,7 +119,7 @@
                       <tr class="Controls">
                         <td class="th">Postel Certification</td> 
                         <td colspan="3">
-                            <!--<asp:CheckBox ID="chkPostel" runat="server" Text="Need Postel Certification"  onclick="checkPostel(this)"/>-->
+
                              <asp:RadioButtonList ID="rdoPostel" runat="server" RepeatDirection="Horizontal">
                                  <asp:ListItem Value="1" onclick="checkPostel(this)">Yes</asp:ListItem>
                                  <asp:ListItem Value="0" onclick="checkPostel(this)">No</asp:ListItem>
