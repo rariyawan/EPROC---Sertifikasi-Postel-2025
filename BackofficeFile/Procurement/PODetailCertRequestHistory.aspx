@@ -76,13 +76,7 @@
                           <asp:ListItem Value="2">FINISH</asp:ListItem>
                       </asp:DropDownList>
                     &nbsp;&nbsp;<asp:Button ID="btnFilter" runat="server" CssClass="Button" Text="Find" onclick="btnFilter_Click" />&nbsp;&nbsp;</td> 
-                </tr><!--
-                <tr class="Controls">
-                  <td colspan="4" style="text-align: right">&nbsp; 
-                    <asp:Button ID="btnFilterx" runat="server" CssClass="Button" Text="Find" 
-                          onclick="btnFilter_Click" />
-                      &nbsp;&nbsp;</td>
-                </tr>-->
+                </tr>
               </table>
               </asp:Panel>
             </td>
