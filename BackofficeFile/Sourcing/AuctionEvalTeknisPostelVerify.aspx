@@ -46,16 +46,16 @@
     <td><pips:AuctionMasterInfo id="AuctionMasterInfo" runat="server"/> 
       <table class="add_table-top"><caption style="display:none">Data</caption><tr style="display:none"><th></th></tr>
         <tr>
-          <td><img border="0" src="../images_tab/tab_s_off.gif"></td> 
+          <td><img border="0" src="../images_tab/tab_s_off.gif" alt=""></td> 
           <td class="add_tab-inactive"><asp:LinkButton ID="lnbData" runat="server" OnClick="lnbData_Click">Auction Data</asp:LinkButton></td> 
-          <td><img border="0" src="../images_tab/tab_off_off.gif"></td> 
+          <td><img border="0" src="../images_tab/tab_off_off.gif" alt=""></td> 
           <td class="add_tab-inactive"><asp:LinkButton ID="lnbTech" runat="server" OnClick="lnbTech_Click">Technical Evaluation</asp:LinkButton></td> 
-          <td><img border="0" src="../images_tab/tab_off_on.gif"></td> 
+          <td><img border="0" src="../images_tab/tab_off_on.gif" alt=""></td> 
           <td class="add_tab-active"><b>Verification Item Postel Certification</b></td> 
-          <td><img border="0" src="../images_tab/tab_e_on.gif"></td> 
+          <td><img border="0" src="../images_tab/tab_e_on.gif" alt=""></td> 
           <td class="add_tab-end"></td> 
-          <td class="add_tab-back"><a id="Link_Close" href="" runat="server"  ><img border="0" src="../images_tab/tab_close.gif"/></a></td> 
-          <td><img border="0" src="../images_tab/tab_end.gif"></td>
+          <td class="add_tab-back"><a id="Link_Close" href="" runat="server"  ><img border="0" src="../images_tab/tab_close.gif" alt=""/></a></td> 
+          <td><img border="0" src="../images_tab/tab_end.gif" alt=""></td>
         </tr>
       </table>
 
